@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bai1</h1>
+<fomr>
+    <img id = "anh" src="https://banner2.cleanpng.com/20181108/yxs/kisspng-running-cartoon-jogging-boy-runner-5be43e694d4416.1469497215416848413165.jpg" alt="" style = />
+    <p> bấm vào nốt bên dưới để di chuyển ảnh sang phải </p>
+    <input type="button" value="nút ấn" onclick="moveRight();" />
+
+</fomr>
+<script>
+    let imgbong =  null;
+    imgbong = document.getElementById('anh');
+    function init () {
+        imgbong = document.getElementById('anh');
+        imgbong.style.position = 'relative';
+        imgbong.style.left = '0px'
+
+    }
+    function moveRight () {
+        imgbong.style.left = parseInt(imgbong.style.left) + 10 + 'px';
+    }
+    window.onload = init;
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="anh" src="https://banner2.cleanpng.com/20181108/yxs/kisspng-running-cartoon-jogging-boy-runner-5be43e694d4416.1469497215416848413165.jpg" alt="" style="position: absolute ; top:50px ; left:0;">
+<button onclick="phai()">phải</button>
+<button onclick="trai()">trái</button>
+<button onclick="len()">lên</button>
+<button onclick="xuong()">xuống</button>
+
+<script>
+    let anhh = document.getElementById('anh')
+    function phai () {
+        anhh.style.left= parseInt(anhh.style.left) + 10 + 'px';
+    }
+    function trai () {
+        anhh.style.left= parseInt(anhh.style.left) - 10 + 'px';
+    }
+    function len () {
+        anhh.style.top= parseInt(anhh.style.top) - 10 + 'px';
+    }
+    function xuong () {
+        anhh.style.top= parseInt(anhh.style.top) + 10 + 'px';
+    }
+</script>
+
+</body>
+</html>
